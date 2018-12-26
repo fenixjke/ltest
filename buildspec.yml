@@ -1,0 +1,14 @@
+version: 0.2
+env:
+  variables:
+    GOOS: "linux"
+    GOARCH: "amd64"
+phases:
+  build:
+    commands:
+      - go build -o main main.go
+artifacts:
+  type: zip
+  files:
+    - samTemplate.yaml
+    - outputSamTemplate.yaml
