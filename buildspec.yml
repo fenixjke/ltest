@@ -6,7 +6,7 @@ env:
 phases:
   build:
     commands:
-      - go-lambda-1/build.sh
+      - sudo go-lambda-1/build.sh
 artifacts:
   type: zip
   files:
