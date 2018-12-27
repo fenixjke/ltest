@@ -8,6 +8,7 @@ phases:
     commands:
       - chmod +x go-lambda-1/build.sh
       - go-lambda-1/build.sh
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket test --output-template-file outputSamTemplate.yaml
 artifacts:
   type: zip
   files:
